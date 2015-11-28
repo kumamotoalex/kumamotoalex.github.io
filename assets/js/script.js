@@ -18,5 +18,11 @@ $(document).ready(function(){
 		}
 		$("#right-side").text(result);
 	});
+
+	$(".info-box").keyup(function(event){
+    if(event.keyCode == 13){
+        $(".info-button").click();
+    }
+});
 	
 });

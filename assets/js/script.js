@@ -8,7 +8,7 @@ $(document).ready(function(){
 		var arrhigh = ["A","E","I","O","U"];
 		for (i = 0; i < x.length; i++) {
 			var c = x.charAt(i);
-			if (jQuery.inArray(c, arrlow) != -1) {
+			if (jQuery.inArray(c, arrlow) != -1 || jQuery.inArray(c, arrhigh) != -1) {
 				var index = Math.floor(Math.random() * 10);
 				result += arrlow[index];
 				

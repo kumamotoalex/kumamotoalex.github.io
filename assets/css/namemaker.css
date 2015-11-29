@@ -32,6 +32,13 @@
 	color: #ce1f22;
 	font-family: "Varela Round";
 }
+#return {
+	float: right;
+	margin-right: 15px;
+	color: #ce1f22;
+	text-decoration: none;
+	font-size: 30px;
+}
 #right-side {
 	position: absolute;
 	right: 100px;

@@ -5,7 +5,7 @@
 	width: 100%;
 	height: 50px;
 	text-align: center;
-	background: rgba(0,0,0,.7);
+	background: rgba(0,0,0,.8);
 	font-size: 30px;
 	padding-top: 10px;
 	font-family: "Varela Round";
@@ -14,7 +14,8 @@
 .topbar-element {
 	position: relative;
 	width: 100px;
-	margin-left: 20px;
+	margin-left: 5%;
+	margin-right: 5%
 	cursor: pointer;
 	color: white;
 	text-decoration: none;
@@ -66,9 +67,9 @@ p{
 
 #container {
 	position:absolute;
-	width: 60%;
+	width: 70%;
 	height: 3000px;
-	left: 20%;
+	left: 15%;
 	top:80px;
 }
 .resume-spacer {
@@ -105,13 +106,14 @@ p{
 	z-index: 5;
 }
 .resume-content {
+	margin-left: 20px;
 	font-size: 15px;
 	z-index: 5;
 }
 
 /*INDIVIDUAL RESUME BLOCKS BELOW*/
 #name {
-	font-size: 70px;
+	font-size: 60px;
 }
 #one {
 	text-align: center;

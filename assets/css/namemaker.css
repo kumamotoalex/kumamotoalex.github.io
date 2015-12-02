@@ -81,3 +81,10 @@
 	cursor: pointer;
 
 }
+#moarinfo{
+	font-family: "Varela Round";
+	color: #ce1f22;
+	font-size: 25px;
+	width: 900px;
+	margin-right: 200px;
+}

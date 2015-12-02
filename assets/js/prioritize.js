@@ -38,22 +38,49 @@ $(document).ready(function(){
 		background();
 	});
 	$("#plus").click(function(){
+		$("#starter").css("visibility","hidden");
 		$("#create-box").css("visibility","visible");
 		$("#modal-overlay").css("z-index", "30");
 	});
 	$("#modal-overlay").click(function() {
 		$("#create-box").css("visibility","hidden");
+		$("#fact-box").css("visibility","hidden");
 		$("#modal-overlay").css("z-index", "-20");
 	});
 	$("#create").click(function() {
 		var title = $("#info-box").val();
-		$("#container").append("<li class = 'priority'><div class = 'sidebar' id = '" + title + "'>" + title + "<\/div><div class = 'circle' id = '" + title + "1'><div class = 'up-arrow'><\/div><div class = 'down-arrow'><\/div><\/div><\/li>");
+		$("#container").append("<li class = 'priority'><div class = 'sidebar' id = '" + title + "'>" + title + "<div class = 'trashbutton'><div class = 'intrash'>del<\/div><\/div><\/div><div class = 'circle' id = '" + title + "1'><div class = 'up-arrow'><\/div><div class = 'down-arrow'><\/div><\/div><\/li>");
 		var y = Math.floor(Math.random()*10);
 		$("#" + title).css("background-color", color[y]);
 		$("#" + title + "1").css("background-color", color[y]);
 		$("#info-box").val("");
-		$("#modal-overlay").css("z-index", "-20");
-		$("#create-box").css("visibility","hidden");
+		$("#modal-overlay").click();
 		background();
+	});
+	// COMMANDS FOR ADDING TO LIST
+	$("body").on("click", ".sidebar", function(){
+		$("#fact-box").css("visibility","visible");
+		$("#modal-overlay").css("z-index", "30");
+		$("#fact-info-box").css("color", $("#" + $(this).attr('id')).css("background-color"));
+		$("#placeholder").append($(this).attr('id'));
+	});
+	$("#create-fact").click(function() {
+		var item = $("#fact-info-box").val();
+		var color = $("#fact-info-box").css("color");
+		$("#containertodos").append("<li class ='fact' style = 'color:" + color +"'>" + item + "<\/li>");
+		$("#fact-info-box").val("");
+		$("#modal-overlay").click()
+		background();
+	});
+
+
+	$("body").on("click", ".trashbutton",function(event){
+		event.stopImmediatePropagation();
+		$($($(this).parent()).parent()).remove();
+		background();
+	});
+	$("#complete").click(function(){
+		$("#containertodos").css("background","rgba(0,0,0,0.5)");
+		$("#container").css("visibility","hidden");
 	});
 });

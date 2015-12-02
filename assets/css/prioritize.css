@@ -374,9 +374,9 @@ body {
 	position: absolute;
 	width: 75%;
 	left: 10%;
-	top:0px;
+	top:-30px;
 	height: 100%;
-	padding-top: 70px;
+	padding-top: 100px;
 	list-style-type: none;
 	z-index: -4;
 }

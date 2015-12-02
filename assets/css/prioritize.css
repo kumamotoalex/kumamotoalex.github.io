@@ -321,7 +321,7 @@ body {
 }
 #create-box {
 	position: fixed;
-	right: 16%;
+	left: 25%;
 	bottom: 50px;
 	width: 600px;
 	height: 100px;
@@ -383,7 +383,7 @@ body {
 
 #fact-box {
 	position: fixed;
-	left: 25%;
+	left: 20%;
 	top: 400px;
 	width: 600px;
 	height: 130px;
@@ -435,7 +435,4 @@ body {
 	text-align: center;
 	margin-top: 10px;
 	font-size: 25px;
-}
-#placeholder {
-	color: rgba(0,0,0,1);
 }

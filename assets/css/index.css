@@ -57,7 +57,9 @@
     height: 100%;
     position: fixed;
     z-index: -10;
-    background-image: url("../img/liquid.jpg");
+    background-image: url("../img/cousins.jpg");
+    background-size: 2000px 1500px;
+    background-position: -350px -500px;
 }
 /*^^^^BACKGROUND AND TOPBAR^^^^*/
 body {
@@ -74,6 +76,22 @@ p{
 	height: 1800px;
 	left: 15%;
 	top:80px;
+}
+#profpic {
+	position: relative;
+	top: 50px;
+	margin-bottom: 100px;
+	width: 200px;
+	height: 200px;
+	background-image: url("../img/portrait.jpg");
+	background-size: 300px 300px;
+	background-position: -50px -10px;
+	border-radius: 100%;
+	margin: auto;
+	border-width: 10px;
+	border-style: solid;
+	border-color: white;
+
 }
 .resume-spacer {
 	position: relative;
@@ -113,6 +131,7 @@ p{
 	font-weight: 800;
 	margin-bottom: 5px;
 	z-index: 5;
+	font-family: "Droid Serif";
 }
 .resume-content {
 	margin-left: 20px;
